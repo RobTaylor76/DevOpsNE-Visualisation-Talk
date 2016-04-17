@@ -1,0 +1,28 @@
+version: '2'
+services:
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+    labels:
+      collectd_docker_app: "monitoring"
+      collectd_docker_task: "grafana"
+    mem_limit: 1000000000
+  graphite:
+    image: nickstenning/graphite
+    ports:
+      - "80:80"
+      - "2003:2003"
+      - "7002:7002"
+    labels:
+      collectd_docker_app: "monitoring"
+      collectd_docker_task: "graphite"
+    mem_limit: 1000000000
+  collect:
+    image: bobrik/collectd-docker
+    environment:
+      - GRAPHITE_HOST=graphite
+      - COLLECTD_HOST=localhost
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    mem_limit: 250000000
