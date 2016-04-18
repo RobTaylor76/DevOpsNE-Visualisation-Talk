@@ -7,6 +7,7 @@ kibana/elasticsearch
 graphana/graphite/collectd
 logstash -f log-pipeline.conf
 scala test app
+nginx
 
 
 #All Sorts Of References
@@ -24,7 +25,7 @@ https://hub.docker.com/_/elasticsearch/
 https://hub.docker.com/r/grafana/grafana/
 https://hub.docker.com/r/nickstenning/graphite/
 https://hub.docker.com/r/bobrik/collectd-docker/
-
+https://hub.docker.com/_/nginx/
 
 #Demo scala app. Talks to Graphite + Logstash
 https://github.com/RobTaylor76/play-scala-metrics
