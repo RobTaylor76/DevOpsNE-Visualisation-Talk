@@ -1,6 +1,10 @@
 # DevOpsNE-Visualisation-Talk
 Bits n bobs for DevOpsNE Talk
 
+kibana -> http://localhost:5601/
+grafana -> http://localhost:3000/
+app -> http://localhost:9001/
+
 
 #What i need to run..
 kibana/elasticsearch
