@@ -12,6 +12,14 @@ graphana/graphite/collectd
 logstash -f log-pipeline.conf
 scala test app
 nginx
+gatling load for app
+
+#What i need to talk about
+visualvm - poking around the VM
+JVM Mertrics plugins
+collectd – The system statistics collection daemon
+graphite/graphana
+logstash/elasticsearch/kibabana
 
 
 #All Sorts Of References
@@ -22,6 +30,9 @@ http://grafana.org/
 https://www.elastic.co/products/elasticsearch
 https://www.elastic.co/products/logstash
 https://www.elastic.co/products/kibana
+https://collectd.org/
+https://github.com/kenshoo/metrics-play
+https://dropwizard.github.io/metrics/3.1.0/
 
 #Docker Image Refereces
 https://hub.docker.com/_/kibana/?
