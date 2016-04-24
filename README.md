@@ -34,6 +34,9 @@ https://collectd.org/
 https://github.com/kenshoo/metrics-play
 https://dropwizard.github.io/metrics/3.1.0/
 
+http://www.slideshare.net/IzzetMustafaiev/metrics-by-coda-hale
+http://www.slideshare.net/robfrankie/java-application-monitoring-with-dropwizard-metrics-and-graphite
+
 #Docker Image Refereces
 https://hub.docker.com/_/kibana/?
 https://hub.docker.com/_/elasticsearch/
