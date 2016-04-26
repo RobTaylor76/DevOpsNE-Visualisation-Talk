@@ -1,0 +1,13 @@
+run all-in-one/all-in-one.sh
+run logstash/start-logstash.sh 
+run test app play-scala-metrics  -> sbt run
+run gatling to generate load  
+
+load up kibana -> http://localhost:5601/app/kibana
+	http response code graphing -> response.raw
+
+load up grafana  http://localhost:3000/  admin/admin
+	setup data source   http://localhost  call it localhost
+
+	import Docker-containers-dashboard 
+	import JVM-dashboard-1460244331347
